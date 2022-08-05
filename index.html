@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/167/167342.png" type="image/x-icon">
+    <title>Launcher</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="imagediv">
+                <img id="image" src="Rem.gif" alt="Rem.jpg" srcset="">
+            </div>
+            <div class="ut">
+                <div class="search">
+                    <input onkeypress="" type="text" class="query" id="search" name="" value="" placeholder="Search...">
+                </div>
+
+                <div class="links" style="color: white;">
+                    <div class="tfp">
+                        <p
+                            style="color: skyblue; text-decoration: underline; text-underline-offset: 2px; margin-top: 0%; margin-bottom: 10px; font-weight: 600;">
+                            Anime</p>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://9anime.id/home" target="_blank"
+                            rel="noopener noreferrer">9annime</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://gogoanime.lu/" target="_blank"
+                            rel="noopener noreferrer">Gogoanime</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://www.animenewsnetwork.com"
+                            target="_blank" rel="noopener noreferrer">Aninews</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://myanimelist.net" target="_blank"
+                            rel="noopener noreferrer">MAL</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://www.livechart.me/"
+                            target="_blank" rel="noopener noreferrer">Livechart</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://nyaa.si/" target="_blank"
+                            rel="noopener noreferrer">Nyaa.si</a>
+                    </div>
+                    <div class="tfp">
+                        <p
+                            style="color: skyblue; text-decoration: underline; text-underline-offset: 2px; margin-top: 0%; margin-bottom: 10px; font-weight: 600;">
+                            Social</p>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://www.facebook.com/"
+                            target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://www.instagram.com/"
+                            target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://twitter.com/home" target="_blank"
+                            rel="noopener noreferrer">Twitter</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://web.whatsapp.com/"
+                            target="_blank" rel="noopener noreferrer">Whatsapp</a>
+                    </div>
+                    <div class="tfp">
+                        <p
+                            style="color: skyblue; text-decoration: underline; text-underline-offset: 2px; margin-top: 0%; margin-bottom: 10px; font-weight: 600;">
+                            Coding</p>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://github.com/Overlord15"
+                            target="_blank" rel="noopener noreferrer">Github</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://vercel.com/dashboard"
+                            target="_blank" rel="noopener noreferrer">Vercel</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://ohmyposh.dev/docs/"
+                            target="_blank" rel="noopener noreferrer">OMP</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;"
+                            href="https://getbootstrap.com/docs/5.2/getting-started/introduction/" target="_blank"
+                            rel="noopener noreferrer">Bootstrap</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://chakra-ui.com/getting-started"
+                            target="_blank" rel="noopener noreferrer">ChakraUI</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://replit.com/~" target="_blank"
+                            rel="noopener noreferrer">Replit</a>
+                    </div>
+                    <div class="tfp">
+                        <p
+                            style="color: skyblue; text-decoration: underline; text-underline-offset: 2px; margin-top: 0%; margin-bottom: 10px; font-weight: 600;">
+                            Media</p>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://www.youtube.com/" target="_blank"
+                            rel="noopener noreferrer">Youtube</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://watchsomuchproxy.com/"
+                            target="_blank" rel="noopener noreferrer">Watchsomuch</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://thepiratebay.org/index.html"
+                            target="_blank" rel="noopener noreferrer">Piratebay</a>
+                        <a style="margin-bottom: 2px; font-weight: 600;" href="https://web.whatsapp.com/"
+                            target="_blank" rel="noopener noreferrer">Yts-Subs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let query = document.querySelector('.query');
+        query.addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+                validate(e);
+            }
+        });
+        function validate(e) {
+            let url = 'https://www.google.com/search?q=' + query.value;
+            window.open(url);
+        }
+
+        document.onkeydown = function (e) {
+
+            // //prevent key F12
+            // if (event.keyCode == 123) {
+            //     return false;
+            // }
+
+            // //prevent CTRL + Shift + I
+            // if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            //     return false;
+            // }
+
+            // //prevent CTRL + Shift + J
+            // if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            //     return false;
+            // }
+            // //prevent CTRL + Shift + C
+            // if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            //     return false;
+            // }
+            // //prevent CTRL + U 
+            // if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            //     return false;
+            // }
+        }
+
+        // search shortcut
+        function clickk() {
+            document.getElementById('search').focus();
+        }
+
+        window.addEventListener('keydown', (event) => {
+
+            clickk();
+
+        })
+
+    </script>
+</body>
+
+</html>

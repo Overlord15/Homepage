@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+
+body {
+    background-color: #0A1A25;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid aqua;
+    color: aqua;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 20px;
+}
+
+.parent {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.child {
+    box-shadow: 3px 3px 1px rgba(0, 255, 255), 9px 9px 2px rgba(0, 255, 255, 0.500), 15px 15px 4px rgba(0, 255, 255, 0.300);
+    height: 60vh;
+    width: 70vw;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagediv {
+    background-color: aqua;
+    height: inherit;
+    width: 30%;
+    border-right: white 2px solid;
+}
+
+#image {
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ut {
+    width: 70%;
+    height: 100%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 20%;
+    margin: auto;
+    width: inherit;
+}
+
+.query {
+    padding-bottom: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.tfp {
+    width: 25%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #FF10F0;
+}
+
+a:hover {
+    animation: linkhover 1s infinite ease-in-out;
+}
+
+@keyframes linkhover {
+    0% {
+        color: #FF10F0;
+        font-size: 1.5vw;
+    }
+
+    50% {
+        color: red;
+        font-size: 1.5vw;
+    }
+
+    100% {
+        color: #FF10F0;
+        font-size: 1.5vw;
+    }
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: aqua;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: aqua;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: aqua;
+  }
