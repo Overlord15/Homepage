@@ -40,7 +40,7 @@ input {
     background-color: aqua;
     height: inherit;
     width: 30%;
-    border-right: white 2px solid;
+    border-right: aqua 2px solid;
 }
 
 #image {
