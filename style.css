@@ -122,15 +122,34 @@ a:hover {
         font-size: 1.5vw;
     }
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: aqua;
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: aqua;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: aqua;
-  }
+}
+
+.music {
+    visibility: hidden;
+    /* height: 15%;
+    width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px white;
+}
+
+#audio {
+    height: 45%;
+}
